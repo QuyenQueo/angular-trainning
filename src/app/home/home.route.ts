@@ -1,12 +1,8 @@
-import { Routes, RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
+import { Route } from '@angular/router';
 
 import { HomeComponent } from './';
 
-export const routes: Routes = [
-    {
-        path: '/',
-        component: HomeComponent
-    },
-];
-
+export const HomeRouter: Route = {
+    path: '',
+    component: HomeComponent
+};
