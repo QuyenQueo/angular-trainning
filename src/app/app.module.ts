@@ -4,18 +4,24 @@ import { EntityModule } from './entities/entity.module';
 import {
     MainComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    NavbarComponent
 } from './layouts';
+import { WebAppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
     declarations: [
         MainComponent,
         FooterComponent,
         HeaderComponent,
+        NavbarComponent
     ],
     imports: [
         BrowserModule,
-        EntityModule
+        RouterModule,
+        EntityModule,
+        WebAppRoutingModule
     ],
     providers: [],
     bootstrap: [MainComponent]
